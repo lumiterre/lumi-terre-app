@@ -21,15 +21,4 @@ function diagnose() {
   const solarSigns = [
     "赤い龍", "白い風", "青い夜", "黄色い種", "赤い蛇", "白い世界の橋渡し", "青い手", "黄色い星",
     "赤い月", "白い犬", "青い猿", "黄色い人", "赤い空歩く者", "白い魔法使い", "青い鷲", "黄色い戦士",
-    "赤い地球", "白い鏡", "青い嵐", "黄色い太陽"
-  ];
-  const solar = solarSigns[(kin - 1) % 20];
-  const wave = solarSigns[Math.floor((kin - 1) / 13)];
-
-  document.getElementById("output").textContent = `
-KIN: ${kin}
-太陽の紋章: ${solar}
-ウェイブスペル: ${wave}
-銀河の音: ${tone}
-  `.trim();
-}
+    "赤い地球", "白い鏡", "青い嵐
