@@ -24,7 +24,7 @@ function diagnose() {
     "赤い地球", "白い鏡", "青い嵐", "黄色い太陽"
   ];
   const solar = solarSigns[(kin - 1) % 20];
-  const wave = solarSigns[Math.floor((kin - 1) / 20)];
+  const wave = solarSigns[Math.floor((kin - 1) / 13)];
 
   document.getElementById("output").textContent = `
 KIN: ${kin}
