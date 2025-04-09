@@ -16,6 +16,13 @@ function diagnose() {
   }
 
   let kin = base + (day - 1);
+
+  // うるう年補正（3月以前のみ）
+  const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+  if (isLeapYear && month < 3) {
+    kin += 1;
+  }
+
   if (kin > 260) kin -= 260;
   if (kin < 1) kin += 260;
 
