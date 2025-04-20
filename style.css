@@ -1,0 +1,27 @@
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 20px;
+}
+#name-display {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+button {
+  margin-top: 15px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+pre {
+  margin-top: 20px;
+  background: #f0f0f0;
+  padding: 15px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
