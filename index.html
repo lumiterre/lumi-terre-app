@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Lumi Terre 診断アプリ（rensa式）</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumi Terre 診断アプリ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Lumi Terre 診断（rensa式マヤ暦対応）</h2>
-  <label>生年月日（YYYY-MM-DD）<input type="date" id="birthdate"></label><br>
+  <h1 id="name-display"></h1>
+  <label>なまえ（ニックネームOK）：<input type="text" id="nickname"></label><br>
+  <label>生年月日（YYYY-MM-DD）：<input type="date" id="birthdate"></label><br>
+  <label>名前（アルファベット）：<input type="text" id="alphabet"></label><br>
   <button onclick="diagnose()">診断する</button>
   <pre id="output"></pre>
+  <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
