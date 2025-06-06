@@ -2,17 +2,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>Lumi Terre 数秘診断アプリ</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Lumi Terre 数秘診断（チャレンジナンバー付き）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1 id="name-display"></h1>
-  <label>なまえ（ニックネームOK）：<input type="text" id="nickname"></label><br>
+  <h2>Lumi Terre 数秘診断（チャレンジナンバー付き）</h2>
+  <label>なまえ（ニックネーム可）：<input type="text" id="nickname"></label><br>
   <label>生年月日（YYYY-MM-DD）：<input type="date" id="birthdate"></label><br>
-  <label>名前（アルファベット）：<input type="text" id="alphabet"></label><br>
+  <label>アルファベット名（例：AKISHINDO）：<input type="text" id="alphabetName"></label><br>
   <button onclick="diagnose()">診断する</button>
-  <pre id="output"></pre>
-  <script src="index.js"></script>
+  <pre id="output" style="font-size:16px; margin-top: 1em;"></pre>
 </body>
+<script src="index.js"></script>
 </html>
